@@ -13,7 +13,8 @@
     background-position: center;
   }
   
-  .main-banner .container {
+  .main-banner {
+   .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,6 +23,7 @@
     top: 80px;
     height: 600px;
   }
+}
   
   .main-text {
     font-weight: 900;

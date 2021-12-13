@@ -3,16 +3,14 @@ img {
     max-width: 100%;
     height: auto;
   }
-
   
   a {
     text-decoration: none;
     color: var(--second-title-color);
-  }
-  
-  a:visited {
+    &:visited {
     color: var(--second-title-color);
   }
+ }
   
   ul {
     margin: 0;
@@ -22,10 +20,6 @@ img {
     font: inherit;
     vertical-align: baseline;
   }
-  
-
-  
-
 
   button {
       cursor: pointer;

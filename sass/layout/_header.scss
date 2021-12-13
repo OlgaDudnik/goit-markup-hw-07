@@ -1,147 +1,154 @@
 .header {
-    display: flex;
-    justify-content: space-around;
-    background-color: #ffffff;
-    border-bottom: 1px solid #ececec;
-  }
-  
-  .header-navigation {
-    display: flex;
-    align-items: center;
-  }
-  
-  .header-logo {
-    font-family: "Raleway";
-    font-weight: bold;
-    letter-spacing: 0.03em;
-    font-size: 26px;
-    line-height: 1.19;
-    margin-right: 93px;
-  }
-  
-  .colortext {
-    color: #212121;
-    padding-right: 15px;
-    margin: 0 auto;
-  }
-  
-  .web-text {
-    color: var(--accent-color);
-  }
-  
-  .header-list {
-    margin: 0;
-    display: flex;
-  }
-  
-  .header-item {
-    margin-right: 50px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ececec;
+}
 
-    &:last-child {
-      margin-right: 0;
-    }
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
 
-  }
-  
-  .header-link {
-    display: flex;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    padding: 32px 0;
-    position: relative;
-    bottom: -1px;
-    transition: color var(--timing-function), fill var(--timing-function);
+.header-logo {
+  font-family: "Raleway";
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  font-size: 26px;
+  line-height: 1.19;
+  margin-right: 93px;
+}
 
-    &.active::after{
-        background-color: rgba(33, 150, 243, 1);
-        position: absolute;
-        content: "";
-        width: 100%;
-        height: 4px;
-        border-radius: 2px;
-        bottom: 0px;
-        right: 0px;
-      }
+.colortext {
+  color: #212121;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.web-text {
+  color: var(--accent-color);
+}
+
+.header-list {
+  margin: 0;
+  display: flex;
+}
+
+.header-item {
+  margin-right: 50px;
+  &:last-child {
+    margin-right: 0;
   }
-  
-  
-  
-  .header-link:hover,
-  .header-link:focus {
+}
+
+.header-link {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding: 32px 0;
+  position: relative;
+  bottom: -1px;
+  transition: color var(--timing-function), fill var(--timing-function);
+  &.active::after{
+    background-color: rgba(33, 150, 243, 1);
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    bottom: 0px;
+    right: 0px;
+  }
+}
+
+.header-link {
+  &:hover, &:focus {
     color: var(--accent-color);
     transition: color var(--timing-function);
   }
+}
   
-  .header-contacts > li:first-child {
-    margin-right: 50px;
+.header-contacts {
+    &> li{
+      &:first-child {
+        margin-right: 50px;
+    }
   }
+}
   
-  .header-mailto-icon {
-    margin-right: 10px;
+.header-mailto-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.header-mailto {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+  transition: color var(--timing-function), fill var(--timing-function);
+}
+
+.header-mailto .header-mailto-icon {
+  &:hover, &:focus {
+      fill: var(--accent-color);
+      transition: fill var(--timing-function);
+    }
   }
-  
-  .header-mailto-icon {
-    fill: currentColor;
+
+.header-tel .header-tel-icon {
+  &:hover, &:focus {
+      fill: var(--accent-color);
+      transition: fill var(--timing-function);
+    }
   }
-  
-  .header-mailto {
-    display: flex;
-    align-items: center;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--main-text-color);
-    transition: color var(--timing-function), fill var(--timing-function);
-  }
-  
-  .header-mailto:hover .header-mailto-icon,
-  .header-mailto:focus .header-mailto-icon,
-  .header-tel:hover .header-tel-icon,
-  .header-tel:focus .header-tel-icon {
-    fill: var(--accent-color);
-    transition: fill var(--timing-function);
-  }
-  
-  .header-tel:hover,
-  .header-tel:focus,
-  .header-mailto:hover,
-  .header-mailto:focus {
+
+.header-tel{
+    &:hover, &:focus{
     color: var(--accent-color);
   }
-  
-  .header-contacts {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
+}
+.header-mailto{
+    &:hover, &:focus{
+    color: var(--accent-color);
   }
-  
-  .header-mailto,
-  .header-tel {
-    padding: 32px 0;
-  }
-  
-  .header-tel {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--main-text-color);
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
-    transition: color var(--timing-function), fill var(--timing-function);
-  }
-  
-  .header-tel-icon {
-    margin-right: 10px;
-  }
-  
-  .address-tel-icon {
-    fill: currentColor;
-  }
+}
+
+.header-contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header-mailto {
+  padding: 32px 0;
+}
+
+.header-tel {
+  padding: 32px 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  transition: color var(--timing-function), fill var(--timing-function);
+}
+
+.header-tel-icon {
+  margin-right: 10px;
+}
+
+.address-tel-icon {
+  fill: currentColor;
+}
