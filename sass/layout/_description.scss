@@ -5,17 +5,16 @@
 
 .description {
   display: flex;
-  & > li {
+  & > .description__item {
     width: 270px;
     display: inline-block;
     margin-right: 30px;
     text-align: left;
-
+    
     &:last-child {
       margin-right: 0;
     }
-
-    .svg-wrap {
+    .description__link {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -25,25 +24,25 @@
       height: 120px;
     }
   }
+}
 
-  h3 {
-    margin: 0;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    padding-top: 30px;
-    padding-bottom: 10px;
-  }
+.description__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
 
-  p {
-    width: 270px;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--main-text-color);
-    padding: 0;
-    margin: 0;
-  }
+.description__text {
+  width: 270px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  padding: 0;
+  margin: 0;
 }

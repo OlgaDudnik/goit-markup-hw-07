@@ -19,13 +19,13 @@
   margin-right: 93px;
 }
 
-.colortext {
+.header-logo--colortext {
   color: #212121;
   padding-right: 15px;
   margin: 0 auto;
 }
 
-.web-text {
+.header-logo__web-text {
   color: var(--accent-color);
 }
 
@@ -34,14 +34,14 @@
   display: flex;
 }
 
-.header-item {
+.header-list__header-item {
   margin-right: 50px;
   &:last-child {
     margin-right: 0;
   }
 }
 
-.header-link {
+.header-list__header-link {
   display: flex;
   font-weight: 500;
   font-size: 14px;
@@ -51,7 +51,7 @@
   position: relative;
   bottom: -1px;
   transition: color var(--timing-function), fill var(--timing-function);
-  &.active::after{
+  &.header-list__header-link--active::after{
     background-color: rgba(33, 150, 243, 1);
     position: absolute;
     content: "";
@@ -63,7 +63,7 @@
   }
 }
 
-.header-link {
+.header-list__header-link {
   &:hover, &:focus {
     color: var(--accent-color);
     transition: color var(--timing-function);
@@ -78,12 +78,12 @@
   }
 }
   
-.header-mailto-icon {
+.header-contacts__header-mailto-icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.header-mailto {
+.header-contacts__header-mailto {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -94,26 +94,26 @@
   transition: color var(--timing-function), fill var(--timing-function);
 }
 
-.header-mailto .header-mailto-icon {
+.header-contacts__header-mailto .header-contacts__header-mailto-icon {
   &:hover, &:focus {
       fill: var(--accent-color);
       transition: fill var(--timing-function);
     }
   }
 
-.header-tel .header-tel-icon {
+.header-contacts__header-tel .header-contacts__header-tel-icon {
   &:hover, &:focus {
       fill: var(--accent-color);
       transition: fill var(--timing-function);
     }
   }
 
-.header-tel{
+.header-contacts__header-tel{
     &:hover, &:focus{
     color: var(--accent-color);
   }
 }
-.header-mailto{
+.header-contacts__header-mailto{
     &:hover, &:focus{
     color: var(--accent-color);
   }
@@ -125,11 +125,11 @@
   margin-left: auto;
 }
 
-.header-mailto {
+.header-contacts__header-mailto {
   padding: 32px 0;
 }
 
-.header-tel {
+.header-contacts__header-tel {
   padding: 32px 0;
   font-weight: 500;
   font-size: 14px;
@@ -145,7 +145,7 @@
   transition: color var(--timing-function), fill var(--timing-function);
 }
 
-.header-tel-icon {
+.header-contacts__header-tel-icon {
   margin-right: 10px;
 }
 

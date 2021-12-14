@@ -1,15 +1,15 @@
 .what-we-do {
   padding: 94px 0;
   text-align: center;
-  ul {
-    &> li {
+  .gallery {
+    &> .gallery__item {
       width: 370px;
       display: inline-block;
     }
   }
 }
 
-.what-we-do-title {
+.what-we-do__title {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
@@ -30,7 +30,7 @@
   }
 }
 
-.what-we-do-text {
+.gallery__text {
   display: flex;
   align-items: center;
   justify-content: center;
