@@ -18,11 +18,11 @@
   margin-bottom: 20px;
 }
 
-.web-text-footer {
+.logo-footer__web-text {
   color: var(--accent-color);
 }
 
-.colortext-footer {
+.logo-footer--light {
   color: var(--main-title-color);
 }
 
@@ -31,7 +31,7 @@ address a {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.address-line {
+.contacts__address {
   display: block;
   color: var(--main-title-color);
   font-size: 14px;
@@ -41,42 +41,28 @@ address a {
   transition: color var(--timing-function);
 }
 
-// li > a.address-mail:hover,
-// li > a.address-tel:hover,
-// li > a.address-line:hover {
-//   color: var(--accent-color);
-// }
 
-li > a.address-mail:hover,
-li > a.address-tel:hover,
-li > a.address-line:hover {
-  color: var(--accent-color);
-}
-
-li{
-  &>{
-      a{
-          &.address-mail, &.address-tel, &.address-line{
-              &:hover{
-                color: var(--accent-color);
-              }
-              &:visited{
-                color: var(--main-title-color);
-              }
-          }
+a{
+  &.contacts__mail, &.contacts__tel, &.contacts__address{
+      &:hover{
+        color: var(--accent-color) !important;
+      }
+      &:visited{
+        color: var(--main-title-color);
       }
   }
 }
 
-.address-mail,
-.address-tel {
+
+.contacts__mail,
+.contacts__tel {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   transition: color var(--timing-function);
 }
 
-.address-mail {
+.contacts__mail {
   display: block;
   margin-bottom: 9px;
 }
@@ -91,7 +77,7 @@ li{
   }
 }
 
-.footer-title {
+.footer-join__title {
   margin: 0;
   font-weight: bold;
   font-size: 14px;
@@ -102,20 +88,20 @@ li{
   text-align: center;
 }
 
-.footer-ul {
+.footer-join__list {
   margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.footer-svg {
-  & + .footer-svg {
+.footer-join__item {
+  & + .footer-join__item {
     margin-left: 10px;
   }
 }
 
-.footer-a {
+.footer-join__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,12 +120,22 @@ li{
 
 .subscribe-wrap {
   margin-left: 93px;
-  h2 {
+  .subscribe-wrap__title {
     text-align: left;
   }
 }
+.subscribe-wrap__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
 
-.email-subscribe-inpute {
+.subscribe-form__email-subscribe {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -153,7 +149,7 @@ li{
   margin-right: 12px;
 }
 
-.subscribe-button {
+.subscribe-form__button {
   background-color: rgba(33, 150, 243, 1);
   font-weight: bold;
   font-size: 16px;
@@ -177,7 +173,7 @@ li{
   justify-content: center;
 }
 
-.send-icon {
+.subscribe-form__send-icon {
   margin-left: 10px;
   fill: #ffffff;
 }

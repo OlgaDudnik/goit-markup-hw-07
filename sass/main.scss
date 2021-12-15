@@ -4,14 +4,16 @@
 @import './base/common';
 
 @import './layout/header';
+
 @import './layout/description';
 @import './layout/what-we-do';
 @import './layout/our-team';
 @import './layout/companys';
-@import './layout/footer';
 @import './layout/portfolio-filters';
 @import './layout/portfolio-img';
 
 @import './components/banner';
 @import './components/container';
 @import './components/modal';
+
+@import './layout/footer';
