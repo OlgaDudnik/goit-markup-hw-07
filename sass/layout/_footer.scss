@@ -43,7 +43,7 @@ address a {
 
 
 a{
-  &.contacts__mail, &.contacts__tel, &.contacts__address{
+  &.contacts__address-item, &.contacts__address{
       &:hover{
         color: var(--accent-color) !important;
       }
@@ -54,15 +54,14 @@ a{
 }
 
 
-.contacts__mail,
-.contacts__tel {
+.contacts__address-item {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   transition: color var(--timing-function);
 }
 
-.contacts__mail {
+.contacts__address-item {
   display: block;
   margin-bottom: 9px;
 }
