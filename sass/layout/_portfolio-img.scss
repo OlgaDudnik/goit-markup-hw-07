@@ -1,8 +1,8 @@
-.overlay:hover .text-hover {
+.portfolio__overlay:hover .portfolio__text-hover {
   transform: translateY(0);
 }
 
-.overlay-img {
+.portfolio__overlay-img {
   overflow: hidden;
   position: relative;
   &:hover::before{
@@ -25,8 +25,8 @@
   }
 }
 
-.text-box {
-  .text-hover {
+.portfolio__text-box {
+  .portfolio__text-hover {
     position: absolute;
     margin: 0;
     color: #fff;
@@ -47,7 +47,7 @@
   }
 }
 
-.portfolio-img {
+.portfolio {
   position: relative;
   background-color: var(--main-title-color);
   display: flex;
@@ -55,14 +55,14 @@
   margin-top: calc(-1 * var(--portfolio-item-gap));
   margin-left: calc(-1 * var(--portfolio-item-gap));
   padding-bottom: 94px;
-  h2 {
+  .portfolio__text-title {
     font-weight: bold;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     margin: 0;
   }
-  p {
+  .portfolio__text {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
@@ -81,10 +81,10 @@
   }
 }
 
-.portfolio-img-li {
+.portfolio__img {
   position: relative;
 }
 
-.portfolio-img-text {
+.portfolio__img-text {
   padding: 20px 24px;
 }

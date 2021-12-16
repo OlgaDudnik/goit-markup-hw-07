@@ -466,7 +466,7 @@ header .container {
   margin-bottom: 50px;
 }
 
-.filters button {
+.filters .filters__button {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -481,27 +481,27 @@ header .container {
   transition: background-color var(--timing-function), color var(--timing-function);
 }
 
-.filters button:hover, .filters button:focus {
+.filters .filters__button:hover, .filters .filters__button:focus {
   background-color: var(--accent-color);
   color: var(--main-title-color);
   cursor: pointer;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.overlay:hover .text-hover {
+.portfolio__overlay:hover .portfolio__text-hover {
   transform: translateY(0);
 }
 
-.overlay-img {
+.portfolio__overlay-img {
   overflow: hidden;
   position: relative;
 }
 
-.overlay-img:hover::before {
+.portfolio__overlay-img:hover::before {
   transform: translateY(0);
 }
 
-.overlay-img::before {
+.portfolio__overlay-img::before {
   display: inline-block;
   content: "";
   position: absolute;
@@ -514,7 +514,7 @@ header .container {
   transition: transform var(--timing-function);
 }
 
-.text-box .text-hover {
+.portfolio__text-box .portfolio__text-hover {
   position: absolute;
   margin: 0;
   color: #fff;
@@ -534,7 +534,7 @@ header .container {
   transition: transform var(--timing-function), opacity var(--timing-function);
 }
 
-.portfolio-img {
+.portfolio {
   position: relative;
   background-color: var(--main-title-color);
   display: flex;
@@ -544,7 +544,7 @@ header .container {
   padding-bottom: 94px;
 }
 
-.portfolio-img h2 {
+.portfolio .portfolio__text-title {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -552,7 +552,7 @@ header .container {
   margin: 0;
 }
 
-.portfolio-img p {
+.portfolio .portfolio__text {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
@@ -560,22 +560,22 @@ header .container {
   margin: 0;
 }
 
-.portfolio-img > li {
+.portfolio > li {
   margin-left: var(--portfolio-item-gap);
   margin-top: var(--portfolio-item-gap);
   border: 1px solid #eeeeee;
   flex-basis: calc(100% / 3 - var(--portfolio-item-gap));
 }
 
-.portfolio-img > li:hover {
+.portfolio > li:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-img-li {
+.portfolio__img {
   position: relative;
 }
 
-.portfolio-img-text {
+.portfolio__img-text {
   padding: 20px 24px;
 }
 
